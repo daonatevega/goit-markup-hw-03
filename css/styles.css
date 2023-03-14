@@ -1,0 +1,476 @@
+/*Normalice*/
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+/*Se almacenan los colores como variables*/
+
+:root {
+  --primary-color: rgba(33, 150, 243, 1);
+  --title-color: rgba(33, 33, 33, 1);
+  --paragraph-color: rgba(117, 117, 117, 1);
+  --footer-color: rgba(255, 255, 255, 0.6);
+  --text-main: rgba(255, 255, 255, 1);
+  --button-main: rgba(245, 244, 250, 1);
+  --background-color: rgba(47, 48, 58, 1);
+  --background-color-team:rgba(245, 244, 250, 1);
+  --background-color-briefcase: rgba(238, 238, 238, 1);
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.list-default {
+  list-style-type: none;
+}
+
+/* color y tamaños de fuente del titulo de la pagina*/
+.text-title-page {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 26px; /*Tamaño de la fuente*/
+  line-height: 1.2; /*Altura de linea*/
+  font-weight: 700; /*propiedad establece qué tan gruesos o delgados deben mostrarse los caracteres en el texto.*/
+  font-family: 'Raleway'; /*propiedad especifica la fuente de un elemento.*/
+  font-style: normal; /*propiedad especifica el estilo de fuente para un texto.*/
+}
+
+/* color y tamaños de fuente del titulo principal*/
+.text-main {
+  color: var(--text-main);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.2;
+  font-style: normal;
+}
+
+/* color y tamaños de fuente para sub-titulos "A que nos dedicamos" y "Nuestro equipo"*/
+
+.text-subtitle {
+  color: var(--title-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-style: normal;
+}
+
+/* color y tamaños de fuente del titulo de los parrafos*/
+.title-text-paragraph {
+  color: var(--title-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-style: normal;
+
+  display: flex;
+}
+
+/* color y tamaños de fuente de los de parrafos*/
+.text-paragraph {
+  color: var(--paragraph-color);
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-style: normal;
+
+  display: flex;
+  
+}
+
+/* color y tamaños de fuentes de los textos del header con anchor*/
+.custom-item-list {
+  color: var(--title-color);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-style: normal;
+}
+
+.custom-item-list:hover {
+  color: var(--primary-color);
+}
+
+.visited-page:visited {
+  color: var(--primary-color);
+}
+
+/* color y tamaños de fuente para textos del footer */
+.custom-footer-list {
+  color: var(--footer-color);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  font-style: normal;
+}
+
+.custom-footer-list:hover {
+  color: var(--primary-color);
+}
+
+/*color y tamaños de fuente del texto del address*/
+.text-address {
+  color: var(--text-main);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  font-style: normal;
+}
+
+/*color y tamaños de fuente de los nombre de mienbros del equipo*/
+.name-team {
+  color: var(--title-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-style: normal;
+}
+
+/*color y tamaños de fuente de textos roles de mienbros del equipo*/
+.role-team {
+  color: var(--paragraph-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  font-style: normal;
+}
+
+/*----------------------------------------------Botones----------------------------------------------------*/
+/*Color boton principal*/
+.main-button {
+  color: var(--text-main);
+  background-color: var(--primary-color);
+  cursor: pointer;
+  border: none;
+  width: 197px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875rem;
+  border-radius: 4px;
+}
+
+/*Color botones de la pagina portafolio*/
+.button-main-nav {
+  color: var(--title-color);
+  background-color: var(--button-main);
+  width: 128px;
+  border-radius: 4px;
+  border: none;
+}
+
+.button-main-nav:hover {
+  color: var(--text-main);
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+/*Color y fuentes  de los titulos del proyecto - Pagina portafolio*/
+.name-proyects {
+  color: var(--title-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-style: normal;
+}
+
+/*Colores y fuentes de nombres de secciones de cada proyecto - Pagina portafolio*/
+.section-proyects {
+  color: var(--paragraph-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  font-style: normal;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+/* Imagen de fondo de la seccion del texto y boton principal*/
+.background-text-main {
+  background-image: url('../img/Main-text-bg-studio.jpg');
+  background-color: var(--background-color);
+  width: 100%;
+  height: 600px;
+}
+
+/* Imagen de fondo de la seccion del texto del pie de pagina - pagina estudio*/
+.background-text-footer-studio {
+  background-image: url('../img/Footer-bg-studio.jpg');
+  background-color: var(--background-color);
+  
+  width: 100%;
+  height: 230px;
+}
+
+/* Imagen de fondo de la seccion del texto del pie de pagina - pagina portafolio*/
+.background-text-footer-briefcase {
+  background-image: url('../img/Footer-bg-briefcase.jpg');
+  background-color: var(--background-color);
+
+  width: 100%;
+  height: 230px;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+.container{
+  width: 1200px;
+}
+
+.pr-05{
+  padding-right: 0.5rem;
+}
+
+.pr-2 {
+  padding-right: 2rem; 
+}
+
+.pr-4 {
+  padding-right: 7rem; 
+}
+
+
+.pt-05 {
+  padding-bottom: 0.5rem;
+}
+
+.pt-1 {
+  padding-bottom: 1rem;
+}
+
+.pt-2{
+  padding-bottom: 2rem;
+}
+
+/*Ajuste de tamaño imagenes "A que nos dedicamos"*/
+.image-word {
+  width: 373.16px;
+  height: 260px;
+}
+
+/*Ajuste de tamaño imagenes del Equipo de trabajo*/
+.image-team {
+  width: 250px;
+  height: 260px;
+}
+
+/*Ajuste de tamaño imagenes de portafolio*/
+.image-briefcase {
+  width: 370px;
+  height: 294px;
+}
+/*------------------------------------------------------------------------------------------------------*/
+
+/*Posicionamiento con flex box y ajuste de tamaños*/
+
+/*Header*/
+
+/*Seccion padre contenedora de todo*/
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Seccion donde estan las opciones para navegar en la pagina*/
+.header-nav {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  align-items: center; 
+}
+
+/*Seccion de contactos*/
+.header-nav-contact {
+  display: flex;
+  width: 40%;
+  align-items: center; 
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+.background-main{
+  display: flex;
+  justify-content: center;
+  /*width: auto;
+  height: 600px;*/
+}
+
+.text-main-flexbox{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-text-and-buttom{
+  display: flex;
+  justify-content: center;
+}
+
+.text-skills{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.text-skills-list{
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+}
+
+.section-dedicate{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.text-dedicate{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.img-word-dedicate{
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+.team-card{
+  width: 100%;
+  height: auto;
+  background-color: var(--background-color-team);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.text-team-flex{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.section-team-flex{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-flex{
+  width: 250px;
+  height: 368px;
+  background-color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-flex>img{
+  width: 100%;
+  height: auto;
+}
+.card-body{
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.section-footer-flexbox{
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-briefcase{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-briefcase-selection{
+  display: flex;
+}
+
+
+
+.product-card-briefcase{
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.section-producto-briefcase{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-flex-briefcase{
+  width: 370px;
+  height: 404px;
+  background-color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(238, 238, 238, 1)
+}
+
+.card-flex-briefcase>img{
+  width: 100%;
+  height: auto;
+}
+.card-body-briefcase{
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
