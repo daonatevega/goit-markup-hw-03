@@ -229,7 +229,7 @@ body {
 .background-text-main {
   background-image: url('../img/Main-text-bg-studio.jpg');
   background-color: var(--background-color);
-  width: 100%;
+  width: 1600px;
   height: 600px;
 }
 
@@ -238,8 +238,8 @@ body {
   background-image: url('../img/Footer-bg-studio.jpg');
   background-color: var(--background-color);
   
-  width: 100%;
-  height: 230px;
+  width: 1600px;
+  height: 252px;
 }
 
 /* Imagen de fondo de la seccion del texto del pie de pagina - pagina portafolio*/
@@ -247,11 +247,15 @@ body {
   background-image: url('../img/Footer-bg-briefcase.jpg');
   background-color: var(--background-color);
 
-  width: 100%;
-  height: 230px;
+  width: 1600px;
+  height: 252px;
 }
 
 /*--------------------------------------------------------------------------------------------------------*/
+.general-section{
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 
 .container{
   width: 1200px;
@@ -265,7 +269,7 @@ body {
   padding-right: 2rem; 
 }
 
-.pr-4 {
+.pr-7 {
   padding-right: 7rem; 
 }
 
@@ -309,6 +313,7 @@ body {
 .main-nav {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 /*Seccion donde estan las opciones para navegar en la pagina*/
@@ -440,23 +445,14 @@ body {
   display: flex;
 }
 
-
-
-.product-card-briefcase{
-  width: 100%;
-  height: auto;
-
-  display: flex;
-  flex-direction: column;
-}
-
 .section-producto-briefcase{
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .card-flex-briefcase{
-  width: 370px;
+  width: 355px;
   height: 404px;
   background-color: var(--text-main);
   display: flex;
@@ -472,5 +468,10 @@ body {
   padding: 20px 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.center-card-product{
+  display: flex;
   justify-content: center;
 }
