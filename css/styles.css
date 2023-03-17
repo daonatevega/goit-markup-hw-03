@@ -82,6 +82,11 @@ body {
   font-weight: 900;
   line-height: 1.2;
   font-style: normal;
+  display: flex;
+  text-align: center;
+  width: 650px;
+  height: auto;
+
 }
 
 /* color y tamaños de fuente para sub-titulos "A que nos dedicamos" y "Nuestro equipo"*/
@@ -229,7 +234,7 @@ body {
 .background-text-main {
   background-image: url('../img/Main-text-bg-studio.jpg');
   background-color: var(--background-color);
-  width: 1600px;
+  width: 1200px;
   height: 600px;
 }
 
@@ -238,7 +243,7 @@ body {
   background-image: url('../img/Footer-bg-studio.jpg');
   background-color: var(--background-color);
   
-  width: 1600px;
+  width: 1200px;
   height: 252px;
 }
 
@@ -247,20 +252,32 @@ body {
   background-image: url('../img/Footer-bg-briefcase.jpg');
   background-color: var(--background-color);
 
-  width: 1600px;
+  width: 1200px;
   height: 252px;
 }
 
 /*--------------------------------------------------------------------------------------------------------*/
 .general-section{
-  padding-bottom: 94px;
-  padding-top: 94px;
+  margin-bottom: 94px;
+  margin-top: 94px;
 }
 
 .container{
   width: 1200px;
+  margin: 0 auto;
 }
 
+.pd-0{
+  padding: 0;
+}
+
+.pl-section-team{
+  padding-left: 34px;
+}
+
+.pl-producto-briefcase{
+  padding-left: 10px;
+}
 .pr-05{
   padding-right: 0.5rem;
 }
@@ -268,11 +285,6 @@ body {
 .pr-2 {
   padding-right: 2rem; 
 }
-
-.pr-7 {
-  padding-right: 7rem; 
-}
-
 
 .pt-05 {
   padding-bottom: 0.5rem;
@@ -289,7 +301,7 @@ body {
 /*Ajuste de tamaño imagenes "A que nos dedicamos"*/
 .image-word {
   width: 373.16px;
-  height: 260px;
+  height: 323.7px;
 }
 
 /*Ajuste de tamaño imagenes del Equipo de trabajo*/
@@ -311,9 +323,9 @@ body {
 
 /*Seccion padre contenedora de todo*/
 .main-nav {
+  border: 1px solid rgba(236, 236, 236, 1);
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
 }
 
 /*Seccion donde estan las opciones para navegar en la pagina*/
@@ -335,14 +347,16 @@ body {
 
 .background-main{
   display: flex;
+  justify-items: center;
   justify-content: center;
+  align-items: center;
   /*width: auto;
   height: 600px;*/
 }
 
 .text-main-flexbox{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -351,27 +365,41 @@ body {
   justify-content: center;
 }
 
-.text-skills{
+
+
+.section-skills{
   margin-top: 5%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-items: center;
 }
 
 .text-skills-list{
   display: flex;
-  justify-content: center;
-  text-align: justify;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  padding-left: 58px;
+}
+
+.element-list-text-skills{
+  width: 285.5px;
 }
 
 .section-dedicate{
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 2%;
 }
 
 .text-dedicate{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin-top: 5%;
 }
@@ -382,7 +410,17 @@ body {
   margin-top: 1%;
 }
 
+.card-flex-dedicate{
+  width: 373.16px;
+  height: 323.7px;
+  display: flex;
+  flex-direction: column;
+}
 
+.card-flex-dedicate>img{
+  width: 100%;
+  height: auto;
+}
 
 /*------------------------------------------------------------------------------------------------------------*/
 .team-card{
@@ -392,6 +430,9 @@ body {
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
 .text-team-flex{
@@ -402,7 +443,10 @@ body {
 
 .section-team-flex{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 5%;
 }
 
 .card-flex{
@@ -425,10 +469,6 @@ body {
   align-items: center;
 }
 
-.team-flex{
-  display: flex;
-  flex-direction: row;
-}
 
 .section-footer-flexbox{
   display: flex;
@@ -439,20 +479,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .nav-briefcase-selection{
   display: flex;
+  flex-direction: row;
 }
 
 .section-producto-briefcase{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
+.product-center{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
 .card-flex-briefcase{
-  width: 355px;
+  width: 370px;
   height: 404px;
   background-color: var(--text-main);
   display: flex;
@@ -468,10 +517,5 @@ body {
   padding: 20px 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-.center-card-product{
-  display: flex;
-  justify-content: center;
+  justify-content: left;
 }
